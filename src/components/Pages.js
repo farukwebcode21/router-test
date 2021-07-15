@@ -1,11 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 
-const Navbar = () => { 
+const Pages = () => {
     return (
-        <nav className="navbarStyle"> 
-            <ul>
-                <li>
+        <div>
+            <ul className="navbar">
+            <li>
                     <NavLink exact to="/" activeStyle={{fontWeight:'bold', color:'red'}}>Home</NavLink>
                 </li>
                 <li>
@@ -24,8 +24,8 @@ const Navbar = () => {
                     <NavLink exact to="/pages" activeStyle={{fontWeight:'bold', color:'red'}}>Pages</NavLink>
                 </li>
             </ul>
-        </nav>
+        </div>
     );
 };
 
-export default Navbar;
+export default Pages;

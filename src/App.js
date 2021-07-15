@@ -8,22 +8,22 @@ import Navbar from './components/Navbar';
 import Error from './components/Error';
 import Posts from './components/Posts';
 import Contact from './components/Contact';
+import Pages from './components/Pages';
 
 
  function App() {
   return (
   <Router>
-  <Navbar/>
+    <Pages />
   <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/about" component={About} />
     <Route exact path="/service" component={Service} />
     <Route exact path="/contact" component={Contact}/>
     <Route exact path="/posts/:category" component={Posts} />
-
-
     <Route component={Error}/>
     </Switch>
+    <Navbar/>
   </Router>
   )
 }
